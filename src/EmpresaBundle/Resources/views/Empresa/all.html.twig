@@ -1,0 +1,89 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Info Empresas{% endblock %}</title>
+        {% block stylesheets %}
+
+                <link rel = stylesheet  href="{{ asset('css/estilos.css') }}" />
+
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}
+
+
+        <h1>Empresas</h1>
+
+        <table >
+                <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Telefono 1</th>
+                        <th>telefono 2</th>
+                        <th>Direccion</th>
+                        <th>Codigo postal</th>
+                        <th>Fecha insertada</th>
+
+                </tr>
+                {% for empresa in empresas %}
+                        <tr>
+                                <td>{{ empresa.id }}</td>
+                                <td>{{ empresa.nombre }}</td>
+                                <td>{{ empresa.telefono1 }}</td>
+                                <td>{{ empresa.telefono2 }}</td>
+                                <td>{{ empresa.direccion  }}</td>
+                                <td>{{ empresa.cp }}</td>
+                                <td>{{empresa.fechaCreacion | date('d-m-Y') }}</td>
+
+                        </tr>
+                {% endfor %}
+        </table>
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+
+
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

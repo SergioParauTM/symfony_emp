@@ -1,0 +1,6 @@
+empresa_homepage:
+    path:     /
+    defaults: { _controller: EmpresaBundle:Default:index }
+all_empresa:
+    path:     /Empresa/all
+    defaults: { _controller: EmpresaBundle:Empresa:all }
