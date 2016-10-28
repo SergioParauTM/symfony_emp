@@ -4,3 +4,8 @@ empresa_homepage:
 all_empresa:
     path:     /Empresa/all
     defaults: { _controller: EmpresaBundle:Empresa:all }
+
+new_empresa:
+    path:     /Empresa/new
+    defaults: { _controller: EmpresaBundle:Empresa:new }
+

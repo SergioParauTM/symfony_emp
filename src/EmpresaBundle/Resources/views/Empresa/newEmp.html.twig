@@ -1,0 +1,45 @@
+{%  extends '::base.html.twig' %}
+
+{% block stylesheets %}
+
+
+    <link href="{{ asset('css/estiloNewEmp.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form_main">
+                    <h4 class="heading"><strong>Añadir </strong> Empresa <span></span></h4>
+                    <div class="form">
+
+                        {{ form_start(form) }}
+                            {{ form_widget(form.nombre, { 'attr': {'class': 'txt','placeholder': "Nombre de la empresa"}  }) }}
+                            {{ form_widget(form.direccion, { 'attr': {'class': 'txt','placeholder': "Dirección de la empresa"}  }) }}
+
+                            {{ form_widget(form.cp, { 'attr': {'class': 'txt','placeholder': "Codigo postal"}  }) }}
+                            {{ form_widget(form.cp, { 'attr': {'class': 'txt'}  }) }}
+                            {{ form_widget(form.telefono1, { 'attr': {'class': 'txt','placeholder': "Telefono 1"}  }) }}
+                            {{ form_widget(form.telefono2, { 'attr': {'class': 'txt','placeholder': "Telefono 2"}  }) }}
+                           <div class="fecha">
+                            {{ form_widget(form.fechaCreacion, { 'attr': {'class': 'txt','placeholder': "Fecha"}  }) }}
+                           </div>
+
+
+                            {{ form_widget(form.save, { 'attr': {'class': 'txt2','placeholder': "Añadir"}  }) }}
+                          {{ form_widget(form.delete, { 'attr': {'class': 'txt2','placeholder': "Borrar campos"}  }) }}
+
+
+                        {{form_end(form) }}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}
