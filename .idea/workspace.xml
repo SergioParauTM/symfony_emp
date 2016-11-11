@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d4a784-6699-4933-9372-a3957228fd78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Controller/AlumnosController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Entity/Empresa.php" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Entity/Empresa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/all.html.twig" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/all.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/newEmp.html.twig" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/newEmp.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/estiloNewEmp.css" afterPath="$PROJECT_DIR$/web/css/estiloNewEmp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/estilos.css" afterPath="$PROJECT_DIR$/web/css/estilos.css" />
     </list>
     <ignored path="projectTwo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alumnos.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Alumnos.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -83,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/menu.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="571">
@@ -555,7 +546,7 @@
       <workItem from="1477636142671" duration="7199000" />
       <workItem from="1477649089073" duration="9000" />
       <workItem from="1478080377775" duration="104000" />
-      <workItem from="1478850372156" duration="10615000" />
+      <workItem from="1478850372156" duration="10731000" />
     </task>
     <task id="LOCAL-00001" summary="Add new emp in bbdd">
       <created>1477647283964</created>
@@ -564,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477647283964</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add new table and relations in bbdd">
+      <created>1478866175705</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478866175705</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32965000" />
+    <option name="totallyTimeSpent" value="33081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="0" />
@@ -606,7 +604,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add new emp in bbdd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new emp in bbdd" />
+    <MESSAGE value="Add new table and relations in bbdd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new table and relations in bbdd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,14 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Empresa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2910">
@@ -1004,6 +995,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
           <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
