@@ -47,6 +47,7 @@ html,body,.container {
 .row {
     height: 100%;
     display: table-row;
+
 }
 
 .row .no-float {

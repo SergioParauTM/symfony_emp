@@ -1,5 +1,4 @@
 
-
 .form {
     height: 100%;
 }
@@ -13,6 +12,7 @@
     background-color: #49484c;
     height: 100% ;
     width: 200px;
+
 }
 
 .form_main {
@@ -22,8 +22,9 @@
     background-color: rgba(255, 255, 255, 0.61);
     padding: 20px;
     border-radius: 25px;
-    margin-top: 40px;
-    float: right;
+    margin-top: 80px;
+  margin-left: 100px;
+    border: solid 1px;
 
 
 }
@@ -51,7 +52,7 @@
 }
 
 .txt[type="text"] {
-    border: 1px #ffffff;
+    border: solid 1px rgba(10, 10, 10, 0.38);
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px 0 10px 5px;
