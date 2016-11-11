@@ -217,4 +217,13 @@ class Empresa
     {
         return $this->fechaCreacion;
     }
+
+
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="Alumnos", mappedBy="empresa")
+     */
+    private $alumno;
+
 }

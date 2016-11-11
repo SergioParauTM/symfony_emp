@@ -1,20 +1,16 @@
 {%  extends '::base.html.twig' %}
 
-{% block stylesheets %}
+  {% block title %}
+
+      Nueva Empresas
 
 
-    <link href="{{ asset('css/estiloNewEmp.css') }}" type="text/css" rel="stylesheet" />
-{% endblock %}
-
+  {% endblock %}
 
 {% block body %}
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-9 form">
                 <div class="form_main">
                     <h4 class="heading"><strong>Añadir </strong> Empresa <span></span></h4>
-                    <div class="form">
 
                         {{ form_start(form) }}
                             {{ form_widget(form.nombre, { 'attr': {'class': 'txt','placeholder': "Nombre de la empresa"}  }) }}
@@ -27,19 +23,12 @@
                            <div class="fecha">
                             {{ form_widget(form.fechaCreacion, { 'attr': {'class': 'txt','placeholder': "Fecha"}  }) }}
                            </div>
-
-
                             {{ form_widget(form.save, { 'attr': {'class': 'txt2','placeholder': "Añadir"}  }) }}
                           {{ form_widget(form.delete, { 'attr': {'class': 'txt2','placeholder': "Borrar campos"}  }) }}
 
-
                         {{form_end(form) }}
-
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
-    {% endblock %}
+{% endblock %}

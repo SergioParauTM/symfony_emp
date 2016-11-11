@@ -5,6 +5,10 @@ all_empresa:
     path:     /Empresa/all
     defaults: { _controller: EmpresaBundle:Empresa:all }
 
+all_Alumnos:
+    path:     /Alumnos/all
+    defaults: { _controller: EmpresaBundle:Alumnos:all }
+
 new_empresa:
     path:     /Empresa/new
     defaults: { _controller: EmpresaBundle:Empresa:new }

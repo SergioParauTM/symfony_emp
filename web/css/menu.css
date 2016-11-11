@@ -1,0 +1,55 @@
+#sidebar {
+    background-color: #191919;
+    padding: 10px;
+
+}
+
+#sidebar a:hover, a:focus {
+    color: #373737;
+    text-decoration: none;
+}
+
+#sidebar.nav > li > a,
+#sidebar.nav > li > a:link {
+    background-color: #191919;
+    color: #FFF;
+}
+
+#sidebar.nav > li > a:hover,
+#sidebar.nav > li > a:focus {
+    background-color: #373737;
+}
+
+#sidebar.nav-pills > li.active > a,
+#sidebar.nav-pills > li.active > a:hover,
+#sidebar.nav-pills > li.active > a:focus {
+    color: #0a0a0a;
+    background-color: #ffffff;
+}
+
+
+.col-md-2{
+    background-color: #191919;
+    height: 100% ;
+}
+
+html,body,.container {
+    height:100%;
+}
+.container {
+    display:table;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    height: 100%;
+    display: table-row;
+}
+
+.row .no-float {
+    display: table-cell;
+    float: none;
+}

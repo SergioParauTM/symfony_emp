@@ -1,0 +1,54 @@
+{% extends '::base.html.twig' %}
+
+  {% block title %}
+
+      Info Empresas
+
+
+  {% endblock %}
+
+
+
+
+{% block body %}
+
+            <div class="col-md-9">
+                <h1 id="alumnos">Alumnos</h1>
+
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Primer apellido</th>
+                        <th>Segundo apellido</th>
+                        <th>Costa</th>
+                        <th>Empresa</th>
+
+
+                    </tr>
+                    {% for alumno in alumnos %}
+                        <tr>
+                            <td>{{ alumno.id }}</td>
+                            <td>{{ alumno.nombre }}</td>
+                            <td>{{ alumno.apellido1 }}</td>
+                            <td>{{ alumno.apellido2 }}</td>
+                            <td>{{ alumno.ciclo }}</td>
+                            <td>{{ alumno.empresa.nombre }}</td>
+
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

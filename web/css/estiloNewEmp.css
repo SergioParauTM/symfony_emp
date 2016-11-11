@@ -1,15 +1,19 @@
-html{
-    background-image: url("newEmpBackg.jpg");
 
 
+.form {
+    height: 100%;
 }
 
-
-.container{
-    width: 100%;
-
+.row .no-float {
+    display: table-cell;
+    float: none;
 }
 
+.menu{
+    background-color: #49484c;
+    height: 100% ;
+    width: 200px;
+}
 
 .form_main {
 
@@ -25,6 +29,7 @@ html{
 }
 .form_main h4 {
     font-family: Helvetica, sans-serif;
+    width: 100%;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 15px;
@@ -44,10 +49,7 @@ html{
     position: absolute;
     width: 75px;
 }
-.form {
-    border-radius: 7px;
-    padding: 6px;
-}
+
 .txt[type="text"] {
     border: 1px #ffffff;
     border-radius: 10px;
