@@ -13,3 +13,10 @@ new_empresa:
     path:     /Empresa/new
     defaults: { _controller: EmpresaBundle:Empresa:new }
 
+
+search_empresa:
+    path:     /apiEmpresa/all
+    defaults: { _controller: EmpresaBundle:ApiEmpresa:allEmpresa}
+    methods:  [GET]
+
+

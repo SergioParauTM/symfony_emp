@@ -17,7 +17,7 @@ class EmpresaController extends Controller
         // find *all* products
         $empresas = $repository->findAll();
 
-        return $this->render('EmpresaBundle:Empresa:all.html.twig', array('empresas' => $empresas));
+        return $this->render('EmpresaBundle:Empresa:all.html.twig', array('todasempresas' => $empresas));
     }
 
     public function newAction(Request $request)
@@ -45,4 +45,8 @@ class EmpresaController extends Controller
 
         return $this->render('EmpresaBundle:Empresa:newEmp.html.twig', array('form' => $form->createView()));
     }
+
+
+
+
 }
