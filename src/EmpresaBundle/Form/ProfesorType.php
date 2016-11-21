@@ -14,7 +14,7 @@ class ProfesorType extends AbstractType
      * @param FormBuilderInterface $builder
      * @param array $options
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options) // al generar el formulario sobre la entidad profesor se nos genera estos metodos
     {
         $builder
             ->add('nombre')
@@ -23,6 +23,8 @@ class ProfesorType extends AbstractType
             ->add('save', SubmitType::class)
             ->add('delete',ResetType::class)
         ;
+
+        //al formulario se nos añade estos  builders que pertenecen a la clase formbuilderInterface que nos construyen el formulario
     }
     
     /**
@@ -34,4 +36,6 @@ class ProfesorType extends AbstractType
             'data_class' => 'EmpresaBundle\Entity\Profesor'
         ));
     }
+
+    // se configuran las opciones que se encuentran en entidad en Profesor y las resuelven
 }

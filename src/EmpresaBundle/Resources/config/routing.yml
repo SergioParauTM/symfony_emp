@@ -21,14 +21,16 @@ new_Profesor:
     path:     /Profesor/new
     defaults: { _controller: EmpresaBundle:Profesor:new }
 
-
-
-
 search_empresa:
     path:     /apiEmpresa/all
     defaults: { _controller: EmpresaBundle:ApiEmpresa:allEmpresa}
     methods:  [GET]
 
+
+search_profesor:
+    path:     /apiProfesores/all
+    defaults: { _controller: EmpresaBundle:ApiProfesores:allProfesores}
+    methods:  [GET]
 
 
 
