@@ -25,6 +25,19 @@ class Alumnos
         return $this->empresa;
 }
 
+    /**
+     * @ORM\ManyToOne(targetEntity="Profesor", inversedBy="alumno")
+     * @ORM\JoinColumn(name="Profesor_id", referencedColumnName="id")
+     */
+    private $profesor;
+
+
+    public  function getProfesor(){
+        return $this->profesor;
+    }
+
+
+
 
     /**
      * @var int
