@@ -1,0 +1,49 @@
+{% extends '::base.html.twig' %}
+
+  {% block title %}
+
+      Info Profesores
+
+
+  {% endblock %}
+
+
+
+
+{% block body %}
+
+            <div class="col-md-9">
+                <h1 id="alumnos">Alumnos</h1>
+
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Departamento</th>
+
+                    </tr>
+                    {% for profesor in profesores %}
+                        <tr>
+                            <td>{{ profesor.id }}</td>
+                            <td>{{ profesor.nombre }}</td>
+                            <td>{{ profesor.apellidos }}</td>
+                            <td>{{ profesor.departamento }}</td>
+
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

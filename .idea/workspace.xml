@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d4a784-6699-4933-9372-a3957228fd78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/profesoresAll.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
     </list>
     <ignored path="projectTwo.iws" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -37,28 +39,38 @@
       <file leaf-file-name="Profesor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Profesor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="15">
               <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alumnos.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Alumnos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="135">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Empresa.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Empresa.php">
+      <file leaf-file-name="ProfesorController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="226" selection-end-column="20" />
+            <state relative-caret-position="105">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profesoresAll.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/profesoresAll.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -94,9 +106,11 @@
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiEmpresaController.php" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/EmpresaController.php" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/all.html.twig" />
-        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Entity/Profesor.php" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php" />
+        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php" />
+        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/profesoresAll.html.twig" />
       </list>
     </option>
   </component>
@@ -442,10 +456,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa" />
       <recent name="$PROJECT_DIR$/src/EmpresaBundle/Controller" />
       <recent name="$PROJECT_DIR$/web/css" />
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa" />
     </key>
   </component>
   <component name="RunManager">
@@ -523,7 +537,7 @@
       <workItem from="1479201414616" duration="1886000" />
       <workItem from="1479381420103" duration="1331000" />
       <workItem from="1479489432463" duration="16000" />
-      <workItem from="1479723240236" duration="418000" />
+      <workItem from="1479723240236" duration="1353000" />
     </task>
     <task id="LOCAL-00001" summary="Add new emp in bbdd">
       <created>1477647283964</created>
@@ -557,7 +571,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38005000" />
+    <option name="totallyTimeSpent" value="38940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
@@ -605,20 +619,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/estiloNewEmp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -939,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Empresa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -955,18 +947,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Profesor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="15">
           <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/profesoresAll.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="525">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding />
         </state>
       </provider>

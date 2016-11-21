@@ -9,6 +9,10 @@ all_Alumnos:
     path:     /Alumnos/all
     defaults: { _controller: EmpresaBundle:Alumnos:all }
 
+all_Profesores:
+    path:     /Profesor/all
+    defaults: { _controller: EmpresaBundle:Profesor:all }
+
 new_empresa:
     path:     /Empresa/new
     defaults: { _controller: EmpresaBundle:Empresa:new }
