@@ -42,7 +42,7 @@ class ProfesorController extends Controller
             $newPr ->flush();
 
 
-            return $this->redirectToRoute('all_profesores'); // si el formulario es correcto y nos devuelve true nos reedirige a la ruta que le decimos
+            return $this->redirectToRoute('all_'); // si el formulario es correcto y nos devuelve true nos reedirige a la ruta que le decimos
         }
 
         return $this->render('EmpresaBundle:Empresa:newProf.html.twig', array('form' => $form->createView())); //  creamos la vista mediante un array dentro de la plantilla que utilizamos

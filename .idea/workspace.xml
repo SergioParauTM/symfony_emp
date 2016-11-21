@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d4a784-6699-4933-9372-a3957228fd78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Form/ProfesorType.php" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Form/ProfesorType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig" afterPath="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig" />
     </list>
     <ignored path="projectTwo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,41 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml">
+      <file leaf-file-name="Alumnos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiProfesoresController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php">
+      <file leaf-file-name="AlumnosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/AlumnosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newProf.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/newProf.html.twig">
+      <file leaf-file-name="alumnosAll.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfesorType.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Form/ProfesorType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+            <state relative-caret-position="390">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -91,8 +80,6 @@
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/newEmp.html.twig" />
         <option value="$PROJECT_DIR$/web/css/estilos.css" />
         <option value="$PROJECT_DIR$/web/css/menu.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig" />
         <option value="$PROJECT_DIR$/web/css/estiloNewEmp.css" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiEmpresaController.php" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/all.html.twig" />
@@ -102,9 +89,11 @@
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/newProf.html.twig" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Form/ProfesorType.php" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/EmpresaController.php" />
+        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php" />
         <option value="$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php" />
-        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig" />
       </list>
     </option>
   </component>
@@ -531,7 +520,7 @@
       <workItem from="1479201414616" duration="1886000" />
       <workItem from="1479381420103" duration="1331000" />
       <workItem from="1479489432463" duration="16000" />
-      <workItem from="1479723240236" duration="2895000" />
+      <workItem from="1479723240236" duration="3492000" />
     </task>
     <task id="LOCAL-00001" summary="Add new emp in bbdd">
       <created>1477647283964</created>
@@ -565,7 +554,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40482000" />
+    <option name="totallyTimeSpent" value="41079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
@@ -809,14 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/AlumnosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/EmpresaBundle.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -860,24 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/newEmp.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="37" column="125" selection-start-line="37" selection-start-column="125" selection-end-line="37" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -912,14 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Profesor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -944,18 +903,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php">
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="510">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Form/ProfesorType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="510">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -968,18 +927,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ProfesorController.php">
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/ApiProfesoresController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="47" column="187" selection-start-line="47" selection-start-column="187" selection-end-line="47" selection-end-column="187" />
+        <state relative-caret-position="510">
+          <caret line="38" column="116" selection-start-line="38" selection-start-column="116" selection-end-line="38" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Form/ProfesorType.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+        <state relative-caret-position="310">
+          <caret line="41" column="115" selection-start-line="41" selection-start-column="115" selection-end-line="41" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Controller/AlumnosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Entity/Alumnos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmpresaBundle/Resources/views/Empresa/alumnosAll.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
           <folding />
         </state>
       </provider>
