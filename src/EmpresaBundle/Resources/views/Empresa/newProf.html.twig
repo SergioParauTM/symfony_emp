@@ -1,0 +1,28 @@
+{%  extends '::base.html.twig' %}
+
+  {% block title %}
+
+      Nuevo Profesor
+
+
+  {% endblock %}
+
+{% block body %}
+            <div class="col-md-9 form">
+                <div class="form_main">
+                    <h4 class="heading"><strong>Añadir </strong> Profesor <span></span></h4>
+
+                        {{ form_start(form) }}
+                            {{ form_widget(form.nombre, { 'attr': {'class': 'txt','placeholder': "Nombre del Profesor"}  }) }}
+                            {{ form_widget(form.apellidos, { 'attr': {'class': 'txt','placeholder': "Apellido del Profesor"}  }) }}
+
+                            {{ form_widget(form.departamento, { 'attr': {'class': 'txt','placeholder': "Departamento"}  }) }}
+                            {{ form_widget(form.save, { 'attr': {'class': 'txt2','placeholder': "Añadir"}  }) }}
+                          {{ form_widget(form.delete, { 'attr': {'class': 'txt2','placeholder': "Borrar campos"}  }) }}
+
+                        {{form_end(form) }}
+                </div>
+            </div>
+
+
+{% endblock %}
