@@ -1,0 +1,41 @@
+{% extends '::default/baseUser.html.twig' %}
+{% block user %}{% endblock %}
+{% block contains %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">Login</div>
+                <div class="panel-body">
+                    <div class="col-md-12" id="login">
+                        <form action="{{ path('login') }}" method="post">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" class="form-control" name="_username" value="{{ last_username }}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" class="form-control" name="_password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="remember_me" name="_remember_me" />
+                                <label for="remember_me">Rememberme</label>
+                            </div>
+                            {#
+                                If you want to control the URL the user
+                                is redirected to on success (more details below)
+                                <input type="hidden" name="_target_path" value="/account" />
+                            #}
+                            <div class="form-group">
+                                <button type="submit" id="usuario_Acceder" class="btn btn-default">Login</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.col-->
+    </div><!-- /.row -->
+{% endblock %}

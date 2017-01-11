@@ -1,24 +1,63 @@
 # To get started with security, check out the documentation:
-# http://symfony.com/doc/current/book/security.html
+# http://symfony.com/doc/current/security.html
 security:
+    encoders:
+        UserBundle\Entity\User: bcrypt
+        Symfony\Component\Security\Core\User\User: plaintext
 
-    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory:
-            memory: ~
+            in_memory:
+                memory:
+                    users:
+                        admin:
+                            password: 1234
+                            roles: 'ROLE_ADMIN'
+
+            chain_provider:
+                chain:
+                    providers: [username, email]
+
+            username:
+                entity:
+                    class: UsersBundle:User
+                    property: username
+                    manager_name: ~
+
+            email:
+                entity:
+                    class: UsersBundle:User
+                    property: email
+                    manager_name: ~
+
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-
+        admin:
+            pattern: ^/admin
+            http_basic: ~
+        user:
+            pattern: ^/user
+            anonymous: ~
+            provider: in_memory
+            form_login:
+                login_path: /user/login
+                check_path: /user/login
+                default_target_path: /
+            logout:
+                path:   /user/logout
+                target: /user
         main:
             anonymous: ~
             # activate different ways to authenticate
 
             # http_basic: ~
-            # http://symfony.com/doc/current/book/security.html#a-configuring-how-your-users-will-authenticate
+            # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
 
             # form_login: ~
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
+    access_control:
+      - {path: ^/user/login,roles: IS_AUTHENTICATED_ANONYMOUSLY}
+      - {path: ^/user,roles: ROLE_ADMIN}
