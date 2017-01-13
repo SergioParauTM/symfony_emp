@@ -21,12 +21,27 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=25, unique=true)
+     * @var string
+     *
+     * @ORM\Column(name="username", type="string", length=255, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Length(
+     *      min = 4,
+     *      max = 32,
+     *      minMessage = "El campo nombre de usuario debe tener como mínimo {{ limit }} carácteres",
+     *      maxMessage = "El campo nombre de usuario debe tener como máximo {{ limit }} carácteres"
+     * )
      */
     private $username;
 
     /**
      * @var string
+     * @ORM\Column(name="email", type="string", length=255, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Email(
+     *     message = "El email '{{ value }}' no tiene el formato de email correcto.",
+     *     checkMX = true
+     * )
      */
     private $email;
 
@@ -45,6 +60,20 @@ class User implements UserInterface
     {
         return $this->id;
     }
+
+    /**
+     * @Assert\NotBlank()
+     * @Assert\Regex(
+     *     pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/",
+     *     message="Tu contraseña debe contener al menos una mayúscula y un número además de minúsculas"
+     * )
+     * @Assert\Length(
+     *      min = 8,
+     *      minMessage = "El campo contraseña debe tener como mínimo {{ limit }} carácteres"
+     * )
+     * @Assert\NotBlank()
+     * @Assert\Length(max=4096)
+     */
 
     private $plainPassword;
 

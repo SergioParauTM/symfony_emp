@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
         <!-- Latest compiled and minified CSS -->
@@ -21,25 +21,44 @@
                 crossorigin="anonymous"></script>
 
         <link href="{{ asset('css/estilos.css') }}" type="text/css" rel="stylesheet"/>
-        <link href="{{ asset('css/estiloNewEmp.css') }}" type="text/css" rel="stylesheet" />
-        <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" />
+        <link href="{{ asset('css/estiloNewEmp.css') }}" type="text/css" rel="stylesheet"/>
+        <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet"/>
 
 
     {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
 </head>
 <body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">GESTOR EMPRESAS</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Log Out</a></li>
+            <li><a href="#" id="user-sesion"> {{ app.user.username }}</a></li>
+        </ul>
+    </div>
+</nav>
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-2 menu">
             <h1 id="menu">Menú</h1>
             <div class="its_menu">
                 <ul id="sidebar" class="nav nav-pills nav-stacked" style="max-width: 200px;">
-                    <li class="active"><a href="http://localhost:8000/Empresa/all"><span class="glyphicon glyphicon-briefcase"></span>  Empresas</a></li>
-                    <li><a href="http://localhost:8000/Alumnos/all"><span class="glyphicon glyphicon-user"></span>  Alumnos</a></li>
-                    <li><a href="http://localhost:8000/Empresa/new"><span class="glyphicon glyphicon-plus"></span>  Añadir empresa</a></li>
-                    <li><a href="http://localhost:8000/Profesor/all"><span class="glyphicon glyphicon-zoom-in"></span> Profesores</a></li>
-                    <li><a href="http://localhost:8080/Profesor/new"><span class="glyphicon glyphicon-align-justify"></span>  Añadir Profesor</a></li>
+                    <li class="active"><a href="http://localhost:8000/Empresa/all"><span
+                                    class="glyphicon glyphicon-briefcase"></span> Empresas</a></li>
+                    <li><a href="http://localhost:8000/Alumnos/all"><span class="glyphicon glyphicon-user"></span>
+                            Alumnos</a></li>
+                    <li><a href="http://localhost:8000/Empresa/new"><span class="glyphicon glyphicon-plus"></span>
+                            Añadir empresa</a></li>
+                    <li><a href="http://localhost:8000/Profesor/all"><span class="glyphicon glyphicon-zoom-in"></span>
+                            Profesores</a></li>
+                    <li><a href="http://localhost:8000/Profesor/new"><span
+                                    class="glyphicon glyphicon-align-justify"></span> Añadir Profesor</a></li>
 
 
                 </ul>
@@ -48,11 +67,11 @@
         </div>
 
 
-{% block body %}
+        {% block body %}
 
-{% endblock %}
-        </div>
+        {% endblock %}
     </div>
+</div>
 
 {% block javascripts %}{% endblock %}
 </body>

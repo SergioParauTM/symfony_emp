@@ -54,3 +54,18 @@ html,body,.container {
     display: table-cell;
     float: none;
 }
+
+
+.nav-fixed{
+    padding: 20px;
+    width: 100%;
+    background-color:#191919;
+    float: right;
+
+
+}
+
+
+#user-sesion{
+    color: white;
+}

@@ -6,28 +6,11 @@ security:
         Symfony\Component\Security\Core\User\User: plaintext
 
     providers:
-            in_memory:
-                memory:
-                    users:
-                        admin:
-                            password: 1234
-                            roles: 'ROLE_ADMIN'
+      projectTwo:
+            entity:
+                class: UserBundle:User
 
-            chain_provider:
-                chain:
-                    providers: [username, email]
 
-            username:
-                entity:
-                    class: UsersBundle:User
-                    property: username
-                    manager_name: ~
-
-            email:
-                entity:
-                    class: UsersBundle:User
-                    property: email
-                    manager_name: ~
 
 
     firewalls:
@@ -35,20 +18,22 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        admin:
-            pattern: ^/admin
-            http_basic: ~
+
         user:
-            pattern: ^/user
+            pattern: ^/
             anonymous: ~
-            provider: in_memory
+            provider: projectTwo
             form_login:
-                login_path: /user/login
-                check_path: /user/login
-                default_target_path: /
+                login_path: /login
+                check_path: /login
             logout:
-                path:   /user/logout
-                target: /user
+                path: logout
+                target: /login
+            remember_me:
+                secret:   '%secret%'
+                lifetime: 604800 # 1 week in seconds
+                path:     /
+
         main:
             anonymous: ~
             # activate different ways to authenticate
