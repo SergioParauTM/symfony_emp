@@ -1,0 +1,37 @@
+{% extends '::base.html.twig' %}
+
+
+
+    {% block title %}
+
+     TODAS LAS CONFIGURACIONES
+
+
+    {% endblock %}
+
+    {% block body %}
+
+        <div class="col-md-9">
+
+<table>
+    <tbody>
+    <tr>
+        <th>id configuracion</th>
+        <th>Parametros</th>
+        <th>Configuracion</th>
+    </tr>
+    <p>
+
+    </p>
+    {% for config in conf %}
+    <tr>
+        <td>{{ config.id }}</td>
+        <td>{{ config.param }}</td>
+        <td>{{ config.configuracion }}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+        </div>
+{% endblock %}

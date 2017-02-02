@@ -32,5 +32,9 @@ search_profesor:
     defaults: { _controller: EmpresaBundle:ApiProfesores:allProfesores}
     methods:  [GET]
 
+post_profesor:
+    path:     /apiProfesores/new
+    defaults: { _controller: EmpresaBundle:ApiProfesores:newProfesores}
+    methods:  [POST]
 
 

@@ -19,4 +19,8 @@ UserBundle\Entity\User:
         password:
             type: string
             length: '64'
+        roles:
+            type: json_array
+            lenght: '64'
+
     lifecycleCallbacks: {  }

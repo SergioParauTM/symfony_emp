@@ -36,7 +36,7 @@
             <a class="navbar-brand" href="#">GESTOR EMPRESAS</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Log Out</a></li>
+            <li><a href="/logout" ><span class="glyphicon glyphicon-user" ></span> Log Out</a></li>
             <li><a href="#" id="user-sesion"> {{ app.user.username }}</a></li>
         </ul>
     </div>
@@ -59,6 +59,16 @@
                             Profesores</a></li>
                     <li><a href="http://localhost:8000/Profesor/new"><span
                                     class="glyphicon glyphicon-align-justify"></span> Añadir Profesor</a></li>
+                    {% if is_granted('ROLE_SUPER_ADMIN') %}
+                        <li>
+                            <a href="/config/all"><i class="glyphicon glyphicon-align-justify"></i> Listas configuracion</a>
+                        </li>
+                    {% endif %}
+                    {% if is_granted('ROLE_SUPER_ADMIN') %}
+                        <li>
+                            <a href="/config/new"><i class="glyphicon glyphicon-align-justify"></i> Nueva configuracion</a>
+                        </li>
+                    {% endif %}
 
 
                 </ul>

@@ -34,6 +34,15 @@ class User implements UserInterface
      */
     private $username;
 
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="roles", type="json_array")
+     */
+    private $roles = array();
+
+
     /**
      * @var string
      * @ORM\Column(name="email", type="string", length=255, unique=true)
@@ -68,7 +77,7 @@ class User implements UserInterface
      *     message="Tu contraseña debe contener al menos una mayúscula y un número además de minúsculas"
      * )
      * @Assert\Length(
-     *      min = 8,
+     *      min = 4,
      *      minMessage = "El campo contraseña debe tener como mínimo {{ limit }} carácteres"
      * )
      * @Assert\NotBlank()
@@ -99,6 +108,9 @@ class User implements UserInterface
 
         return $this;
     }
+
+
+
 
     /**
      * Get username
@@ -165,14 +177,30 @@ class User implements UserInterface
         // You *may* need a real salt if you choose a different encoder.
         return null;
     }
+
+    /**
+     * Set roles
+     *
+     * @param string $roles
+     *
+     * @return User
+     */
+    public function setRoles(array $roles)
+    {
+
+        $this->roles = $roles;
+
+        return $this;
+    }
+
     public function getRoles()
     {
-        return array('ROLE_USER');
+        return $this->roles;
     }
-    public function eraseCredentials(){}
 
+    public function eraseCredentials()
+    {
 
-
+    }
 
 }
-

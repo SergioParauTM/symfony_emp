@@ -1,0 +1,37 @@
+
+{%  extends '::base.html.twig' %}
+
+  {% block title %}
+
+      Nueva Configuracion
+
+
+  {% endblock %}
+
+{% block body %}
+
+
+    <div class="col-md-9 form">
+    <div class="form_main">
+    <h4 class="heading"><strong>Añadir </strong> Configuracion <span></span></h4>
+
+    {{ form_start(form) }}
+
+
+        {{ form_label(form.param) }}
+        {{ form_widget(form.param, {'attr': {'class': 'form-control'}}) }}
+        {{ form_errors(form.param) }}
+        {{ form_label(form.configuracion) }}
+        {{ form_widget(form.configuracion, {'attr': {'class': 'form-control'}}) }}
+        {{ form_errors(form.configuracion) }}
+
+    <div>
+        {{ form_widget(form.save, {'attr': {'class': 'btn btn-info'}}) }}
+        {{ form_widget(form.delete, {'attr': {'class': 'btn btn-danger'}}) }}
+
+    </div>
+    </div>
+
+
+    {{ form_end(form) }}
+{% endblock %}

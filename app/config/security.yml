@@ -18,6 +18,14 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+        admin:
+            pattern: ^/admin
+            http_basic: ~
+            anonymous: ~
+            provider: projectTwo
+            logout:
+                path:  /admin/logout
+                target: /admin
 
         user:
             pattern: ^/
@@ -44,5 +52,9 @@ security:
             # form_login: ~
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
     access_control:
-      - {path: ^/user/login,roles: IS_AUTHENTICATED_ANONYMOUSLY}
-      - {path: ^/user,roles: ROLE_ADMIN}
+      - {path: ^/login,roles: IS_AUTHENTICATED_ANONYMOUSLY}
+      - {path: ^/register,roles: IS_AUTHENTICATED_ANONYMOUSLY}
+      - {path: ^/config,roles: ROLE_SUPER_ADMIN}
+      - {path: ^/admin,roles: ROLE_ADMIN}
+      - {path: ^/,roles: ROLE_USER}
+
