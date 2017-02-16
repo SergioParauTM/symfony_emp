@@ -1,0 +1,18 @@
+ConfigBundle\Entity\config:
+    type: entity
+    table: config
+    repositoryClass: ConfigBundle\Repository\configRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        param:
+            type: string
+            length: 255
+        configuracion:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

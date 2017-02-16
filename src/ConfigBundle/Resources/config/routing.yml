@@ -1,0 +1,11 @@
+config_homepage:
+    path:     /
+    defaults: { _controller: ConfigBundle:Default:index }
+
+list_conf:
+    path:     /config/all
+    defaults: { _controller: ConfigBundle:Default:all}
+
+new_conf:
+    path:     /config/new
+    defaults: { _controller: ConfigBundle:Default:new }
